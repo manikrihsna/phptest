@@ -10,7 +10,7 @@ $dbpwd = getenv("DB_PASSWORD");;
 $connection = mysqli_connect($dbhost.":".$dbport, $dbuser, $dbpwd, $dbname) or die("Error " . mysqli_error($connection));
 
 
-$query = "SELECT * from customers" or die("Error in the consult.." . mysqli_error($connection));
+$query = "SELECT * from CUSTOMERS" or die("Error in the consult.." . mysqli_error($connection));
 
 echo "Hello All.. Here is the list of users: <br>";
 $rs = $connection->query($query);
