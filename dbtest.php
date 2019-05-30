@@ -15,7 +15,7 @@ $query = "SELECT * from CUSTOMERS" or die("Error in the consult.." . mysqli_erro
 echo "Hello All.. Here is the list of users: <br>";
 $rs = $connection->query($query);
 while ($row = mysqli_fetch_assoc($rs)) {
-    echo "User Id: ".$row['ID'] . " User Name: " . $row['NAME'] . "<br>";
+    echo "User Id: ".$row['ID'] . " User Name: " . $row['NAME'] . " Age: ". $row['AGE'] "<br>";
 }
 echo "End of the list <br>";
 
